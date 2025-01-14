@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCWeb2022 - Atividade de Recuperação 1</title>
+    <script src="script.js" defer></script>
+    <style>
+        * {
+            font-family: Roboto, Helvetica, sans-serif;
+        }
+        body { 
+            background-color: #ddd;
+        }
+header, main {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 3px 5px 2px #ccc;
+    padding: 20px 10px;
+}
+
+main {
+    min-height: 80vh;
+}
+header {border-radius: 15px 15px 0px 0;}
+header img {
+    width: 150px;
+    height: 150px;
+    float:left;
+    margin-right:25px
+}
+header h1 {
+    font-size: 1.2em;
+    margin: 0;
+}
+header h3 {
+    margin: 5px 0 10px;
+    font-style:italic;
+    font-weight:  normal;
+    font-size: 1.0em;
+}
+header h4{
+    margin: 5px 0;
+    font-weight: normal;
+    font-size: 0.75em;
+}
+main h4{
+    text-align: center;
+}
+main >	p {
+    font-size:0.8em;
+    margin-left: 15px;	
+}
+main li {
+    margin-bottom: 20px;
+    margin-right: 15px;
+    line-height: 1.2em;
+}
+article {
+    background-color: #ddd;
+    font-size: 0.8em;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    line-height: 1.2em;	
+}
+.destaque {
+    background-color: #ff0;
+    padding: 2px;
+    font-weight: bold;
+}
+
+label {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+table, table td, table th{
+    border:1px solid #000;
+    font-size:0.85em;
+}
+
+table td, table th {
+    padding: 1px 10px;
+}
+table tr:nth-child(2n) {
+    background-color:#ddd;
+}
+
+
+    
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="/images/logo.jpg " alt="Centro Federal de Educação Tecnológica do Rio de Janeiro Celso Suckow da Fonseca - CEFET/RJ">
+		<h1>Centro Federal de Educação Tecnológica do Rio de Janeiro - Celso Suckow da Fonseca</h1>
+		<h3>Campus Nova Friburgo</h3>
+		<h4>Curso Técnico em Informática</h4>
+		<h4>Professor Rafael Escalfoni</h4>
+    </header>
+    <main>
+		<h4>Programação de Clientes Web - Atividade de Recuperação 1</h4>
+        <p>
+			Leia os enunciados das questões com atenção. Responda à tarefa no MS Teams com este arquivo completo. 
+		</p>
+		<p>
+			Não altere o nome das variáveis no seu script. Seu script será testado nesta página, sem adaptações.
+		</p>
+
+		<p>
+			Boa sorte!
+		</p>
+        <ol>
+
+        
+
+    <!-- Questão 1 -->
+    <div class="questao">
+        <h2>1) Calcular o valor do combustível necessário para percorrer uma distância</h2>
+        <p>Você tem um veículo que faz 10 km por litro de combustível. Quantos litros você precisa para percorrer a distância
+            de 100 km? Considerando que o preço do combustível é informado por você, calcule o valor total gasto com combustível.</p>
+        <label for="q01-dinheiro">Quanto você tem de dinheiro?</label>
+        <input type="number" id="q01-dinheiro" placeholder="R$">
+        <button id="q01-executar">Calcular</button>
+        <ul id="q01-result" class="resultados"></ul>
+    </div>
+
+    <!-- Questão 2 -->
+    <div class="questao">
+        <h2>2) Calcular o IMC</h2>
+        <p>Digite o seu peso e a sua altura para calcular o seu Índice de Massa Corporal (IMC).</p>
+        <label for="q02-peso">Peso (kg):</label>
+        <input type="number" id="q02-peso" placeholder="Peso em kg">
+        <label for="q02-altura">Altura (m):</label>
+        <input type="number" step="0.01" id="q02-altura" placeholder="Altura em metros">
+        <button id="q02-executar">Calcular IMC</button>
+        <ul id="q02-result" class="resultados"></ul>
+    </div>
+
+    <!-- Questão 3 -->
+    <div class="questao">
+        <h2>3) Lançamento de dado</h2>
+        <p>Simule o lançamento de um dado de seis faces. Após 100 lançamentos, mostre a quantidade de vezes que cada face
+            apareceu e a sua frequência em porcentagem.</p>
+        <button id="q03-executar">Simular Lançamento de Dado</button>
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th>Face</th>
+                    <th>Ocorrências</th>
+                    <th>Frequência (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="face-ocorr-1">0</td>
+                    <td class="face-freq-1">0%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="face-ocorr-2">0</td>
+                    <td class="face-freq-2">0%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="face-ocorr-3">0</td>
+                    <td class="face-freq-3">0%</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="face-ocorr-4">0</td>
+                    <td class="face-freq-4">0%</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="face-ocorr-5">0</td>
+                    <td class="face-freq-5">0%</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="face-ocorr-6">0</td>
+                    <td class="face-freq-6">0%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Questão 4 -->
+    <div class="questao">
+        <h2>4) Inverter nomes</h2>
+        <p>Você deve adicionar alguns nomes à lista e depois inverter a ordem dos nomes adicionados.</p>
+        <label for="q04-nome">Nome:</label>
+        <input type="text" id="q04-nome">
+        <button id="q04-add">Adicionar Nome</button>
+        <ul id="q04-nomes"></ul>
+        <button id="q04-executar">Inverter Nomes</button>
+        <ul id="q04-nomes-invertidos" class="resultados"></ul>
+    </div>
+
+    <!-- Questão 5 -->
+    <div class="questao">
+        <h2>5) Verificar se uma palavra é um palíndromo</h2>
+        <p>Digite uma palavra e verifique se ela é um palíndromo (a mesma palavra ao contrário).</p>
+        <label for="q05-palavra">Digite uma palavra:</label>
+        <input type="text" id="q05-palavra">
+        <button id="q05-executar">Verificar</button>
+        <ul id="q05-result" class="resultados"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</ol>
+</main>
+</body>
+
+</html>
